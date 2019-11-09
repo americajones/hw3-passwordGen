@@ -1,10 +1,14 @@
 h1 {
     text-align: center;
+}
 
+h3 {
+    color: rgb(74, 112, 139);
 }
 
 body {
     background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #promptBox {
@@ -12,6 +16,8 @@ body {
     padding: 20px 40px 60px;
     background-color: white;
     width: 75%;
+    box-shadow:0 0 10px 3px lightgrey; 
+    border-radius: 5px;
 }
 
 textarea {
@@ -20,6 +26,9 @@ textarea {
     margin: auto;
     border-style: dashed;
     border-color: lightgrey;
+    border-radius: 5px;
+    text-align: center;
+
 }
 
 hr {
@@ -28,12 +37,12 @@ hr {
 }
 
 #butt1 {
-    background-color: darkcyan;
+    background-color: rgb(23, 128, 177);
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     padding: 15px 25px;
     border: none;
-    border-radius: 12px;
+    border-radius: 25px;
     width: 230px;
     color: white;
     margin-top: 10px;
@@ -44,17 +53,17 @@ hr {
     margin-top: 10px;
     color: white;
     width: 230px;
-    background-color: lightgrey;
+    background-color: rgb(187, 187, 187);
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     padding: 15px 25px;
     border: none;
-    border-radius: 12px;
+    border-radius: 25px;
     float: right;
 }
 
 #butt1:hover {
-    background-color: teal;
+    background-color: rgb(3, 69, 114);
 }
 
 #butt2:hover {

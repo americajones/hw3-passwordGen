@@ -69,13 +69,13 @@ function genPassword() {
         textarena.textContent = password;
         return;
     
-    } else if (confirmUppercase === false && confirmNumeric === false && confirmSpecial === false) {
+    } else if (confirmUppercase === false && confirmNumeric === false && confirmSpecial === false && confirmLowercase) {
     
         randomizer(lowerc);
         textarena.textContent = password;
         return;
 
-    } else if (confirmLowercase === false && confirmNumeric === false && confirmSpecial === false) {
+    } else if (confirmLowercase === false && confirmNumeric === false && confirmSpecial === false && confirmUppercase) {
     
         randomizer(upperc);
         textarena.textContent = password;
@@ -90,27 +90,27 @@ function genPassword() {
         randomizer(lowerSpecnum);
         textarena.textContent = password;
 
-    } else if (confirmNumeric === false && confirmSpecial === false) {
+    } else if (confirmNumeric === false && confirmSpecial === false && confirmUppercase && confirmLowercase) {
 
         randomizer(justLetters);
         textarena.textContent = password;
 
-    } else if (confirmUppercase === false && confirmNumeric === false) {
+    } else if (confirmUppercase === false && confirmNumeric === false && confirmLowercase && confirmSpecial) {
 
         randomizer(lowerSpec);
         textarena.textContent = password;
 
-    } else if (confirmUppercase === false && confirmSpecial === false) {
+    } else if (confirmUppercase === false && confirmSpecial === false && confirmLowercase && confirmNumeric) {
 
         randomizer(lowerNum);
         textarena.textContent = password;
 
-    } else if (confirmLowercase === false && confirmSpecial === false) {
+    } else if (confirmLowercase === false && confirmSpecial === false && confirmUppercase && confirmNumeric) {
 
         randomizer(upperNum);
         textarena.textContent = password;
 
-    } else if (confirmLowercase === false && confirmNumeric === false) {
+    } else if (confirmLowercase === false && confirmNumeric === false && confirmUppercase && confirmSpecial) {
 
         randomizer(upperSpec);
         textarena.textContent = password;
@@ -136,12 +136,8 @@ function genPassword() {
         alert("You must include some letters!");
         return;
     }
-
-    //picks randomly from arrays
-
-
-    //write generated password to page
-
+        //picks randomly from arrays
+        //write generated password to page
     function randomizer(arr) {
 
 
